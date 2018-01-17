@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DOMinate</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./bundle.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="./master.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  </head>
+  <body class="bg">
+    <main>
+      <h1>todo list</h1>
+      <div class="bgs">
+        <h4 class="bg-header">change background</h4>
+        <div class="groceries">groceries</div>
+        <div class="work">work</div>
+        <div class="travel">travel</div>
+      </div>
+      <form action="index.html" method="post">
+        <input type="text" class="input" placeholder="write a todo">
+        <input type="submit" class="submit" value="add me">
+      </form>
+      <ol class="todo-list"></ol>
+      <footer>
+        <p class="footer-text">made with <3 by John Rudell</p>
+        <a href="https://www.linkedin.com/in/johnrudell/">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/johnrudell">
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </a>
+      </footer>
+    </main>
+
+    <script type="text/javascript">
+
+      function addTodo() {
+        $d(".submit").on("click", e => {
+          e.preventDefault();
+          const value = document.querySelector('.input').value;
+
+          if (value) {
+            $d('.todo-list').append(
+              `<li class="list-item">
+                <span class="item">${value}</span>
+                <span class="space"></span>
+                <span class="delete">x</span>
+              </li>`);
+          }
+          document.querySelector('.input').value = "";
+        });
+      }
+
+      function removeTodo() {
+        $d(".todo-list").on("click", e => {
+          if ($d(e.target).attr("class") === "delete") {
+            $d(e.target).parent().remove();
+          }
+        });
+      }
+
+      function changeBackground() {
+        $d(".bgs div").on("click", e => {
+          e.stopPropagation();
+          $d("body").removeClass("groceries");
+          $d("body").removeClass("work");
+          $d("body").removeClass("travel");
+          const className = e.target.getAttribute("class");
+          $d("body").addClass(`${className}`);
+        });
+      }
+
+      addTodo();
+      removeTodo();
+      changeBackground();
+    </script>
+  </body>
+</html>
