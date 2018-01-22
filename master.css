@@ -1,6 +1,6 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background: url("images/groceries.jpg") no-repeat center center fixed;
+  background: url("https://s3.amazonaws.com/dominate-dev/groceries.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -28,7 +28,7 @@ main {
 }
 
 .groceries {
-  background: url("images/groceries.jpg") no-repeat center center fixed;
+  background: url("https://s3.amazonaws.com/dominate-dev/groceries.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -36,7 +36,7 @@ main {
 }
 
 .work {
-  background: url("images/work.jpg") no-repeat center center fixed;
+  background: url("https://s3.amazonaws.com/dominate-dev/work.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -44,7 +44,7 @@ main {
 }
 
 .travel {
-  background: url("images/travel.jpg") no-repeat center center fixed;
+  background: url("https://s3.amazonaws.com/dominate-dev/travel.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
