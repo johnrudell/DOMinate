@@ -3,7 +3,7 @@
 
 <p>DOMinate is a JavaScript library mimicing the DOM manipulation of jQuery. It is written in vanilla JavaScript. The demo showcases a simple todo app that can create and remove todos as well as change the background.</p>
 
-<img src="http://res.cloudinary.com/rudell84/image/upload/v1516171152/DOMinate_kad9dw.png"></img>
+<img src="https://res.cloudinary.com/rudell84/image/upload/v1516817925/DOMinate_kad9dw.png"></img>
 <h2>DOMinate Features</h2>
 <ul>
   <li>DOM Manipulation</li>
