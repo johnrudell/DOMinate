@@ -24,19 +24,27 @@
       </form>
       <ol class="todo-list"></ol>
       <footer>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/johnrudell/">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/johnrudell">
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+          </a>
+          <a href="https://angel.co/johnrudell">
+            <i class="fa fa-angellist" aria-hidden="true"></i>
+          </a>
+          <a href="http://johnrudell.com/">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+          </a>
+        </div>
         <p class="footer-text">made with <3 by John Rudell</p>
-        <a href="https://www.linkedin.com/in/johnrudell/">
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        </a>
-        <a href="https://github.com/johnrudell">
-          <i class="fa fa-github-square" aria-hidden="true"></i>
-        </a>
       </footer>
     </main>
 
     <script type="text/javascript">
 
-      function addTodo() {
+      const addTodo = () => {
         $d(".submit").on("click", e => {
           e.preventDefault();
           const value = document.querySelector('.input').value;
@@ -53,7 +61,7 @@
         });
       }
 
-      function removeTodo() {
+      const removeTodo = () => {
         $d(".todo-list").on("click", e => {
           if ($d(e.target).attr("class") === "delete") {
             $d(e.target).parent().remove();
@@ -61,7 +69,7 @@
         });
       }
 
-      function changeBackground() {
+      const changeBackground = () => {
         $d(".bgs div").on("click", e => {
           e.stopPropagation();
           $d("body").removeClass("groceries");
