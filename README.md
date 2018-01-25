@@ -1,131 +1,132 @@
-<h1>DOMinate</h1>
+# DOMinate
 <h3><a href="http://johnrudell.com/DOMinate/">DEMO</a></h3>
 
-<p>DOMinate is a JavaScript library mimicing the DOM manipulation of jQuery. It is written in vanilla JavaScript. The demo showcases a simple todo app that can create and remove todos as well as change the background.</p>
+DOMinate is a JavaScript library mimicing the DOM manipulation of jQuery. It is written in vanilla JavaScript. The demo showcases a simple todo app that can create and remove todos as well as change the background.
 
 <img src="https://res.cloudinary.com/rudell84/image/upload/v1516817925/DOMinate_kad9dw.png"></img>
-<h2>DOMinate Features</h2>
-<ul>
-  <li>DOM Manipulation</li>
-  <li>Event Handling</li>
-  <li>AJAX requests</li>
-</ul>
+## DOMinate Features
 
-<h2>Getting Started</h2>
+  + DOM Manipulation
+  + Event Handling
+  + AJAX requests
+
+
+## Getting Started
 
 To get started download `lib/main.js` and `lib/dom_node_collection.js` and compile them using webpack: `webpack --watch lib/main.js lib/app_name.js`.
 
-<h2>API</h2>
+## API
 
-<h3>Core Function</h3>
+### Core Function
 DOMinate utilizes the global variable, `$d`, that provides a wrapper for all functions in the library. It is passed a single argument, an HTML element, CSS selector, or a function. For example, if passed a CSS selector, DOMinate will return an array of all HTML elements that match the selector.
-<h3 style="display: none;">CSS example</h3>
+
 
 ```
 const list-items = $d('li');
 ```
 
-<h3>DOM Manipulation and Traversal</h3>
+### DOM Manipulation and Traversal
 
-<h4>html</h4>
+#### `html`
 
-<p>Gets the innerHTML of a DOM element.</p>
+Gets the innerHTML of the DOM element(s).
 
 ```
 $d(element).html()
 ```
 
-<p>Sets the innerHTML of the DOM element(s).</p>
+Sets the innerHTML of the DOM element(s).
 
 ```
 $d(element).html('hey')
 ```
 
-<h4>empty</h4>
-<p>Clears the innerHTML of the DOM element(s).</p>
+#### `empty`
+Clears the innerHTML of the DOM element(s).
 
 ```
 $d(element).empty()
 ```
 
-<h4>append</h4>
-<p>Adds child elements to the DOM element(s).</p>
+#### `append`
+Adds child elements to the DOM element(s).
 
 ```
 $d(element).append(children)
 ```
 
-<h4>attr</h4>
-<p>Gets the atrribute of the DOM element.</p>
+#### `attr`
+Gets the atrribute of the DOM element.
 
 ```
 $d(element).attr(attrName)
 ```
-<p>Sets the atrribute of the DOM element.</p>
+Sets the atrribute of the DOM element.
 
 ```
 $d(element).attr(attrName, value)
 ```
 
-<h4>addClass</h4>
-<p>Adds a class to each DOM element.</p>
+#### `addClass`
+Adds a class to each DOM element.
 
 ```
 $d(element).addClass(className)
 ```
 
-<h4>removeClass</h4>
-<p>Removes a class from each DOM element.</p>
+#### `removeClass`
+Removes a class from each DOM element.
 
 ```
 $d(element).removeClass(className)
 ```
 
-<h4>children</h4>
-<p>Gets the children of the DOM element(s).</p>
+#### `children`
+Gets the children of the DOM element(s).
+
 ```
 $d(element).children()
 ```
 
-<h4>parent</h4>
-<p>Gets the parent of the DOM element(s).</p>
+#### `parent`
+Gets the parent of the DOM element(s).
 
 ```
 $d(element).parent()
 ```
 
-<h4>find</h4>
-<p>Finds the DOM element(s) by the selector.</p>
+#### `find`
+Finds the DOM element(s) by the selector.
 
 ```
 $d(element).find(selector)
 ```
 
-<h4>remove</h4>
-<p>Removes the DOM element(s).</p>
+#### `remove`
+Removes the DOM element(s).
 
 ```
 $d(element).remove()
 ```
 
-<h3>Event Listeners</h3>
+### Event Listeners
 
-<h4>on</h4>
-<p>Adds an event listener to the DOM element(s).</p>
+#### `on`
+Adds an event listener to the DOM element(s).
 
 ```
 $d(element).on(eventName, callback)
 ```
 
-<h4>off</h4>
-<p>Removes an event listener from the DOM element(s).</p>
+#### `off`
+Removes an event listener from the DOM element(s).
 
 ```
 $d(element).off(eventName, callback)
 ```
 
-<h3>AJAX</h3>
-<p>Sends and receieves data from the server, using the XMLHttpRequest API.</p>
+### AJAX
+Sends and receieves data from the server, using the XMLHttpRequest API.
 
 ```
   const defaults = {
