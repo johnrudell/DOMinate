@@ -8,7 +8,7 @@ DOMinate is a JavaScript library mimicing the DOM manipulation of jQuery. It is 
 
   + DOM Manipulation
   + Event Handling
-  + AJAX requests
+  + AJAX Requests
 
 
 ## Getting Started
