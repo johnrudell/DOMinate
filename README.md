@@ -29,7 +29,7 @@ const list-items = $d('li');
 
 <h4>html</h4>
 
-<p>Retrieves the innerHTML of a DOM element.</p>
+<p>Gets the innerHTML of a DOM element.</p>
 
 ```
 $d(element).html()
