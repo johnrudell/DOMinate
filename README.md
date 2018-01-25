@@ -1,7 +1,7 @@
 # DOMinate
 <h3><a href="http://johnrudell.com/DOMinate/">DEMO</a></h3>
 
-DOMinate is a JavaScript library mimicing the DOM manipulation of jQuery. It is written in vanilla JavaScript. The demo showcases a simple todo app that can create and remove todos as well as change the background.
+DOMinate is a JavaScript library mimicking the DOM manipulation of jQuery. It is written in vanilla JavaScript. The demo showcases a simple todo app that can create and remove todos as well as change the background.
 
 <img src="https://res.cloudinary.com/rudell84/image/upload/v1516817925/DOMinate_kad9dw.png"></img>
 ## DOMinate Features
