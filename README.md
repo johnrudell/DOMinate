@@ -27,7 +27,7 @@ const list-items = $d('li');
 
 <h3>DOM Manipulation and Traversal</h3>
 
-<h4>`html`</h4>
+<h4>html</h4>
 
 <p>Retrieves the innerHTML of a DOM element.</p>
 
@@ -41,21 +41,21 @@ $d(element).html()
 $d(element).html('hey')
 ```
 
-<h4>`empty`</h4>
+<h4>empty</h4>
 <p>Clears the innerHTML of the DOM element(s).</p>
 
 ```
 $d(element).empty()
 ```
 
-<h4>`append`</h4>
+<h4>append</h4>
 <p>Adds child elements to the DOM element(s).</p>
 
 ```
 $d(element).append(children)
 ```
 
-<h4>`attr`</h4>
+<h4>attr</h4>
 <p>Gets the atrribute of the DOM element.</p>
 
 ```
@@ -67,41 +67,41 @@ $d(element).attr(attrName)
 $d(element).attr(attrName, value)
 ```
 
-<h4>`addClass`</h4>
+<h4>addClass</h4>
 <p>Adds a class to each DOM element.</p>
 
 ```
 $d(element).addClass(className)
 ```
 
-<h4>`removeClass`</h4>
+<h4>removeClass</h4>
 <p>Removes a class from each DOM element.</p>
 
 ```
 $d(element).removeClass(className)
 ```
 
-<h4>`children`</h4>
+<h4>children</h4>
 <p>Gets the children of the DOM element(s).</p>
 ```
 $d(element).children()
 ```
 
-<h4>`parent`</h4>
+<h4>parent</h4>
 <p>Gets the parent of the DOM element(s).</p>
 
 ```
 $d(element).parent()
 ```
 
-<h4>`find`</h4>
+<h4>find</h4>
 <p>Finds the DOM element(s) by the selector.</p>
 
 ```
 $d(element).find(selector)
 ```
 
-<h4>`remove`</h4>
+<h4>remove</h4>
 <p>Removes the DOM element(s).</p>
 
 ```
@@ -110,14 +110,14 @@ $d(element).remove()
 
 <h3>Event Listeners</h3>
 
-<h4>`on`</h4>
+<h4>on</h4>
 <p>Adds an event listener to the DOM element(s).</p>
 
 ```
 $d(element).on(eventName, callback)
 ```
 
-<h4>`off`</h4>
+<h4>off</h4>
 <p>Removes an event listener from the DOM element(s).</p>
 
 ```
